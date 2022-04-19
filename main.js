@@ -6,7 +6,7 @@ const app = express();
 app.use(express.urlencoded({extended:true}))
 
 app.use(async (req,res,next)=>{
-await User.sync();
+await User.sync({alter:true});
 next();
 })
 
