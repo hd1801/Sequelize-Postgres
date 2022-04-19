@@ -26,7 +26,7 @@ User.init({ // Model Defination
     },
     lastName : DataTypes.STRING,
     dob: {
-        type: DataTypes.DATE,
+        type: DataTypes.DATEONLY,
         allowNull: false
     },
     address: DataTypes.TEXT,
@@ -39,6 +39,4 @@ User.init({ // Model Defination
     sequelize,
     modelName:"User"
 });
-async()=>await User.sync();
-
 export  {User};
