@@ -1,5 +1,5 @@
 import express from "express";
-import connectDB from "./connect.model.js";
+import connectDB from "./model/connect.model.js";
 
 
 const app = express();
